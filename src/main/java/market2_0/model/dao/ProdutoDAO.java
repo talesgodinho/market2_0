@@ -9,8 +9,6 @@ import market2_0.model.persistence.Produto;
 public class ProdutoDAO {
 
 	private EntityManager entityManager;
-	private Object name;
-	private Object nomeL;
 
 	public ProdutoDAO(EntityManager entityManager) {
 		this.entityManager = entityManager;
