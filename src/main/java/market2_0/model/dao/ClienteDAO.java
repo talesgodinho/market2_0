@@ -32,7 +32,7 @@ public class ClienteDAO {
 		return convertToMerge(cliente);
 	}
 
-	public Cliente getById(int id) {
+	public Cliente getById(Long id) {
 		return this.entityManager.find(Cliente.class, id);
 	}
 
@@ -47,5 +47,4 @@ public class ClienteDAO {
 	private Cliente convertToMerge(Cliente cliente) {
 		return this.entityManager.merge(cliente);
 	}
-
 }

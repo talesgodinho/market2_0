@@ -32,7 +32,7 @@ public class ProdutoDAO {
 		return convertToMerge(produto);
 	}
 
-	public Produto getById(int id) {
+	public Produto getById(Long id) {
 		return this.entityManager.find(Produto.class, id);
 	}
 

@@ -11,7 +11,7 @@ public class Categoria {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int id;
+	Long id;
 
 	@Column(nullable = false)
 	String nome;
@@ -23,11 +23,11 @@ public class Categoria {
 		this.nome = nome.toLowerCase();
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
